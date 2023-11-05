@@ -11,7 +11,11 @@ This add-on finds notes whose cards are not all in the same deck, and displays t
 
 == Configuration ==
 
-If a lot of such notes were found, it may take a long time to display them all in the Browse window. The maximum number of found notes to display in the Browse window can be configured in the Tools / Add-Ons manager.
+This add-on can be configured with Tools / Add-ons / Config. Changes only take effect when Anki is restarted.
+
+You can limit the maximum number of found notes to display in the Browse window.
+
+You can also configure a search string to filter the set of notes to be examined.
 
 == How it could be done manually instead ==
 
