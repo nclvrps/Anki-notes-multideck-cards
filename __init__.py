@@ -14,6 +14,8 @@ def display_notes() -> None:
     multideck_note_ids_maxlen_exceeded : bool = False
 
     def my_background_op(col: Collection, note_ids: list[int]) -> int:
+        nonlocal multideck_note_ids_maxlen_exceeded
+
         for note_id in note_ids:
             multideck_cards_found : bool = False
 
@@ -38,9 +40,13 @@ def display_notes() -> None:
 
                 multideck_note_ids.append(note_id)
 
+        # return arbitrary value, ignored
+        return 0
+
+    # pylint: disable-next=unused-argument
     def on_success(count: int) -> None:
         if len(multideck_note_ids) == 0:
-            show_info(f"No notes were found (using the configured search string) to have cards in more than one deck.")
+            show_info("No notes were found (using the configured search string) to have cards in more than one deck.")
         else:
             if multideck_note_ids_maxlen_exceeded:
                 show_info(f"Number of notes displayed limited to only: {multideck_note_ids_maxlen}.\n\nThis limit can be configured in Tools / Add-ons / Config.")
