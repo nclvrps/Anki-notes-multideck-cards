@@ -1,7 +1,7 @@
 # Anki-notes-multideck-cards
 Anki add-on for displaying notes whose cards are not all in the same deck
 
-== Description ==
+**Description**
 
 Notes can have multiple cards, and each of these cards could be in a different deck. However, you often want all cards of any given note to be in the same deck.
 
@@ -9,7 +9,7 @@ But when moving cards between decks, you might accidentally leave some cards of 
 
 This add-on finds notes whose cards are not all in the same deck, and displays them in the Browse window.
 
-== Configuration ==
+**Configuration**
 
 This add-on can be configured with Tools / Add-ons / Config. Changes only take effect when Anki is restarted.
 
@@ -17,7 +17,7 @@ You can limit the maximum number of found notes to display in the Browse window.
 
 You can also configure a search string to filter the set of notes to be examined.
 
-== How it could be done manually instead ==
+**How it could be done manually instead**
 
 Without this add-on, you could perform the same function manually by doing the following:
 * Switch to Notes mode in the Browse window.
