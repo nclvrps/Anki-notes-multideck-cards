@@ -1,6 +1,8 @@
 # Anki-notes-multideck-cards
 Anki add-on for displaying notes whose cards are not all in the same deck
 
+https://ankiweb.net/shared/info/380632731
+
 **Description**
 
 Notes can have multiple cards, and each of these cards could be in a different deck. However, you often want all cards of any given note to be in the same deck.
